@@ -9,4 +9,12 @@ public class Node {
         left = null;
     }
 
+    public void setLeft(Node node) {
+        this.left = node;
+    }
+
+    public  void setRight(Node node) {
+        this.right = node;
+    }
+
 }
