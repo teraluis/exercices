@@ -8,12 +8,12 @@ public class IHMSaisie extends JOptionPane {
     Choix[] choix = {Choix.CAILLOU, Choix.CISEAUX, Choix.PAPIER};
 
     public IHMSaisie(String nom){
-        setMessage(nom + ", que jouez-vous");
+        setMessage(nom.toUpperCase() + " que jouez-vous");
         setOptions(choix);
-        dialogue = createDialog(null, "chifoumi");
+        dialogue = createDialog(null, "CHIFOUMI");
     }
 
-    Choix proposerChoix() {
+    public Choix proposerChoix() {
         dialogue.setVisible(true);
         return (Choix) getValue();
     }
