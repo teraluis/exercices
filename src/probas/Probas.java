@@ -27,8 +27,12 @@ public class Probas {
                 .reduce(1, (long x, long y) -> x * y);
     }
 
-    public static int pairsN(String [] arme, int soldats) {
-        return factorial(arme.length)/(arme.length - soldats);
+    public static int arrangements(int n, int p) {
+        int number = 1;
+        for(int i = n - p; i <= n ; i++) {
+            number *= i;
+        }
+        return number;
     }
 
     public static int somme(int [] numbers) {
